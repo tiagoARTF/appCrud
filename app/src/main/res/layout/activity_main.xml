@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gel"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:text="CRUD de Productos"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:shadowColor="#80000000"
+            android:shadowDx="10"
+            android:shadowDy="1"
+            android:shadowRadius="8" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/layers_color"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/textView"
+            android:layout_alignBottom="@id/textView"
+            android:layout_marginStart="10dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/degradado"
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/degradado"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="32dp"
+            android:ems="10"
+            android:text="Referencia"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etreferencia"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="monospace"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/code"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="Ingresa la Referencia del producto"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:textColorHint="#C1BEBE" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="32dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Descripción"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etdescripcion"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="monospace"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/paste"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Ingresa la descripción del producto"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:textColorHint="#C1BEBE" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="32dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Costo"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etcosto"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="monospace"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/money"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="Ingresa el costo del producto"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:textColorHint="#C1BEBE"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="32dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Existencia"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etexistencia"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="monospace"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/numbered"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:hint="Ingresa la Existencia del producto"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColorHint="#C1BEBE" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="32dp"
+            android:ems="10"
+            android:textSize="18sp"
+            android:textColorHint="@color/white"
+            android:hint="ValorIva"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etvaloriva"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="4dp"
+            android:textAlignment="center"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="monospace"
+            android:background="@drawable/edittext_background"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:textColor="@color/fa"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textColorHint="#756C6C" />
+
+        <TextView
+            android:id="@+id/tvmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnsave"
+                style="@android:style/Widget.Button"
+                android:background="@drawable/button_background"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="30dp"
+                android:width="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/ff"
+                android:text="Guardar"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnsearch"
+                style="@android:style/Widget.Button"
+                android:background="@drawable/button_background"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="30dp"
+                android:width="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Buscar"
+                android:backgroundTint="@color/teal_700"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnupdate"
+                style="@android:style/Widget.Button"
+                android:background="@drawable/button_background"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="30dp"
+                android:width="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/fr"
+                android:text="Actualizar"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btndelete"
+                style="@android:style/Widget.Button"
+                android:background="@drawable/button_background"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="30dp"
+                android:width="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/fg"
+                android:text="Eliminar"
+                 />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logoutButton"
+            style="@android:style/Widget.Button"
+            android:background="@drawable/button_background"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            android:width="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#575656"
+            android:text="Cerrar Sesión"
+            />
+            </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

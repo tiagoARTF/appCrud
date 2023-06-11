@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity"
+    android:background="@drawable/gel">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/intro_top_background"
+                android:layout_margin="16dp"
+                android:layout_height="600dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bienvenido a la plataforma de gestión de datos"
+                    android:textAlignment="center"
+                    android:layout_margin="32dp"
+                    android:textColor="#ffffff"
+                    android:textSize="41dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    app:srcCompat="@drawable/layers_color" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/circle_orange" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/circle_orange2" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/title_background"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="AKIVOY"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresa Ahora"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    app:layout_constraintVertical_bias="0.76" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/button_background"
+                android:layout_height="60dp"
+                android:text="Registrarse"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:layout_marginTop="32dp"
+                style="@android:style/Widget.Button"
+                android:textColor="@color/white"
+                android:onClick="onRegisterButtonClick" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/button_background"
+                android:layout_height="60dp"
+                android:text="Iniciar Sesión"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:layout_marginTop="28dp"
+                style="@android:style/Widget.Button"
+                android:textColor="@color/white"
+                android:onClick="onLoginButtonClick" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
