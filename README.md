@@ -1,3 +1,3 @@
 # appCrud
 crud aplication
-[![appcrud](https://i.postimg.cc/1z4cbRYL/Loan.png)](https://postimg.cc/Mc2QQwwD)
+[![appcrud.png](https://i.postimg.cc/mgMQw2sn/appcrud.png)](https://postimg.cc/G4L83R9P)
